@@ -22,6 +22,15 @@ def get_bmi_category(bmi):
     else:
         return "Obese"
 
+def calculate_ideal_weight(height, target_bmi=22):
+    """
+    Calculate ideal weight for given height and target BMI
+    :param height: height in meters
+    :param target_bmi: target BMI value (default 22)
+    :return: ideal weight in kg
+    """
+    return target_bmi * (height ** 2)
+
 if __name__ == "__main__":
     print("BMI Calculator")
     try:
@@ -29,8 +38,11 @@ if __name__ == "__main__":
         height = float(input("Enter your height in meters: "))
         bmi = calculate_bmi(weight, height)
         category = get_bmi_category(bmi)
+        ideal_weight = calculate_ideal_weight(height)
         print(f"Your BMI is: {bmi:.2f}")
         print(f"Category: {category}")
+        print(f"Ideal weight for your height: {ideal_weight:.2f} kg")
+        print(f"Difference: {weight - ideal_weight:.2f} kg")
     except ValueError:
         print("Please enter valid numbers for weight and height.")
 
