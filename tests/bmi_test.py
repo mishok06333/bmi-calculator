@@ -21,3 +21,4 @@ def test_validate_input():
     assert validate_input(70, 3.0)[0] is False
     assert validate_input(1, 1.75)[0] is False
     assert validate_input(400, 1.75)[0] is False
+    assert validate_input(500, 1.75)[0] is False
