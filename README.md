@@ -1,6 +1,6 @@
 # BMI Calculator
 
-[![Python CI](https://github.com/mishok0633/bmi-calculator/actions/workflows/python-app.yml/badge.svg)](https://github.com/mishok0633/bmi-calculator/actions/workflows/python-app.yml)
+[![Python application](https://github.com/mishok06333/bmi-calculator/actions/workflows/python-app.yml/badge.svg)](https://github.com/mishok06333/bmi-calculator/actions/workflows/python-app.yml)
 
 A simple Body Mass Index calculator in Python
 
