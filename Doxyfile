@@ -6,6 +6,7 @@ FILE_PATTERNS          = *.py
 RECURSIVE              = YES
 EXCLUDE                = tests/  # Игнорировать тесты
 GENERATE_HTML          = YES
+HTML_OUTPUT            = html
 GENERATE_LATEX         = NO
 HTML_DYNAMIC_MENUS     = YES
 HTML_COLORSTYLE_HUE    = 200  # Синяя тема
